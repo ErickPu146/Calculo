@@ -1,0 +1,90 @@
+/* importar fuente */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
+
+.container-login {
+  font-family: "Poppins", sans-serif;
+  background: #f6f5f7;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.container-form-login {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25), 0, 10px 10px rgba(0, 0, 0, 0.22);
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+
+.social-container a {
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+}
+
+button.login {
+  border: 1px solid #ff4b2b;
+  background: #ff4b2b;
+  padding: 12px 45px;
+  color: #fff;
+}
+
+button.action {
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 75ms ease-in;
+}
+
+#lila {
+  background: #be4bdb;
+  border: 1px solid #be4bdb;
+}
+
+button.action:active {
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}
+
+button.ghost {
+  background: transparent;
+  border: 1.5px solid #fff;
+  padding: 12px 45px;
+  color: white;
+}
+
+.overlay {
+  background: #ff416c;
+  background: linear-gradient(to right, #ff4b2b, #ff416c) no-repeat 0 0 / cover;
+  color: #fff;
+}
+
+.overlay-left {
+  background: #be4bdb;
+  background: linear-gradient(to right, #be4bdb, #d855f8) no-repeat 0 0 / cover;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+button.register {
+  border: 1px solid #b448cf;
+  background: #be4bdb;
+  padding: 12px 45px;
+  color: #fff;
+}
