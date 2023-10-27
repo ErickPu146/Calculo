@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "../home";
-import { Exponentes } from "../exponentes";
-import { ProductosNotables } from "../productos-notables";
+import { Exponents } from "../exponents";
+import { RemarkableProducts } from "../remarkable-products";
 
 const Menu = () => {
   return (
@@ -10,8 +10,8 @@ const Menu = () => {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/exponentes" element={<Exponentes />} />
-          <Route path="/productos-notables" element={<ProductosNotables />} />
+          <Route path="/exponentes" element={<Exponents />} />
+          <Route path="/productos-notables" element={<RemarkableProducts />} />
         </Routes>
       </Router>
     </>

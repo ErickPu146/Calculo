@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { BtnReturnMenu } from "../../components/btnReturnMenu";
 import { Col, Container, Row, Form } from "react-bootstrap";
+import { FormExerciseExponents } from "../../components/formExerciseExponents";
 
-const Exponentes = () => {
+const Exponents = () => {
+  const [selectedExercise, setSelectedExcercise] = useState(0)
   return (
     <>
       <Container className="pt-5">
@@ -17,7 +19,7 @@ const Exponentes = () => {
             <Row className="justify-content-center">
               <Col md={12} className="w-100">
                 <h5 className="text-center">Seleccione la opción que realizará:</h5>
-                <Form.Select>
+                <Form.Select onChange={(e) => setSelectedExcercise(parseInt(e.target.value))}>
                   <option>Opciones:</option>
                   <option value="1">Multiplicación de exponentes</option>
                   <option value="2">División de exponentes</option>
@@ -32,8 +34,8 @@ const Exponentes = () => {
                   </option>
                 </Form.Select>
               </Col>
-              <Col md={12}>
-              
+              <Col md={12} className="pt-4">
+                <FormExerciseExponents value={selectedExercise}/>
               </Col>
             </Row>
           </Col>
@@ -43,4 +45,4 @@ const Exponentes = () => {
   );
 };
 
-export { Exponentes };
+export { Exponents };
