@@ -7,7 +7,7 @@ const BtnReturnMenu = () => {
       <Link to="/">
         <button className="action register">
           <i className="bi bi-caret-left-fill"></i>
-          <i className="bi bi-caret-left-fill"></i>Regresar
+          <i className="bi bi-caret-left-fill"></i>Regresar al menú
         </button>
       </Link>
     </>

@@ -3,18 +3,18 @@
 
 .container-login {
   font-family: "Poppins", sans-serif;
-  background: #f6f5f7;
+  background: #30363e;
   display: grid;
   place-content: center;
   height: 100vh;
 }
 
 .container-form-login {
-  background: #fff;
+  background: #ffff;
   border-radius: 10px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25), 0, 10px 10px rgba(0, 0, 0, 0.22);
   overflow: hidden;
-  width: 768px;
+  width: 1200px;
   max-width: 100%;
   min-height: 480px;
 }
@@ -87,4 +87,10 @@ button.register {
   background: #be4bdb;
   padding: 12px 45px;
   color: #fff;
+}
+
+.new-theme {  
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }

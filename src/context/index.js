@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import { derivativeContext } from "./derivatives";
 
 export const ContentContext = createContext();
 
@@ -11,6 +12,7 @@ export const ContentProvider = ({ children }) => {
   const [resultadoBinomioCuadradoPerfecto, setResultadoBinomioCuadradoPerfecto] = useState();
   const [resultadoDiferenciaBinomioCuadradoPerfecto, setResultadoDiferenciaBinomioCuadradoPerfecto] = useState();
   const [resultadoProductoSumaDiferencia, setProductoSumaDiferencia] = useState();
+  const { calculateDerivative } = derivativeContext()
 
   const multiplicacionExponentes = (base1, exponente1, base2, exponente2) => {
     if(base1 === base2){
@@ -109,6 +111,7 @@ export const ContentProvider = ({ children }) => {
     productoSumaDiferenciaDosTerminos,
     resultadoProductoSumaDiferencia,
     setProductoSumaDiferencia,
+    calculateDerivative,
   };
 
   return (

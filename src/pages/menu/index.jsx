@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from "../home";
 import { Exponents } from "../exponents";
 import { RemarkableProducts } from "../remarkable-products";
+import { Derivatives } from "../derivatives";
 
 const Menu = () => {
   return (
@@ -12,6 +13,7 @@ const Menu = () => {
           <Route path="/" element={<Home />} />
           <Route path="/exponentes" element={<Exponents />} />
           <Route path="/productos-notables" element={<RemarkableProducts />} />
+          <Route path="/derivadas" element={<Derivatives />} />
         </Routes>
       </Router>
     </>
