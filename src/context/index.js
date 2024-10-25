@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 import { derivativeContext } from "./derivatives";
+import { physicContext } from "./physics2";
 
 export const ContentContext = createContext();
 
@@ -13,6 +14,7 @@ export const ContentProvider = ({ children }) => {
   const [resultadoDiferenciaBinomioCuadradoPerfecto, setResultadoDiferenciaBinomioCuadradoPerfecto] = useState();
   const [resultadoProductoSumaDiferencia, setProductoSumaDiferencia] = useState();
   const { calculateDerivative } = derivativeContext()
+  const { calculatePhysicExercise } = physicContext()
 
   const multiplicacionExponentes = (base1, exponente1, base2, exponente2) => {
     if(base1 === base2){
@@ -112,6 +114,7 @@ export const ContentProvider = ({ children }) => {
     resultadoProductoSumaDiferencia,
     setProductoSumaDiferencia,
     calculateDerivative,
+    calculatePhysicExercise
   };
 
   return (

@@ -4,6 +4,7 @@ import { Home } from "../home";
 import { Exponents } from "../exponents";
 import { RemarkableProducts } from "../remarkable-products";
 import { Derivatives } from "../derivatives";
+import { Physics } from "../physics2";
 
 const Menu = () => {
   return (
@@ -14,6 +15,7 @@ const Menu = () => {
           <Route path="/exponentes" element={<Exponents />} />
           <Route path="/productos-notables" element={<RemarkableProducts />} />
           <Route path="/derivadas" element={<Derivatives />} />
+          <Route path="/fisica2" element={<Physics />} />
         </Routes>
       </Router>
     </>

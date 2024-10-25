@@ -47,14 +47,13 @@ const Derivatives = () => {
     { id: 1, function: "12x^5", label: "Derivadas básicas" },
     {
       id: 2,
-      function: "5x^3 + 3x - 6x^4 + 3",
+      function: "-6x^4 + 5x^3 + 3x + 3",
       label: "Derivadas de sumas y restas",
     },
     { id: 3, function: "x^2 * sin(x)", label: "Derivadas de producto" },
     { id: 4, function: "(x^2 + 1) / (x + 2)", label: "Derivadas de cocientes" },
-    { id: 5, function: "sin(2x + 3)", label: "Regla de la cadena" },
+    { id: 5, function: "(4x + 20)^5", label: "Regla de la cadena" },
     { id: 6, function: "sin(x) + cos(x)", label: "Derivadas trigonométricas" },
-    { id: 7, function: "x^2 + y^2 = 1", label: "Derivadas Implícitas" },
     { id: 8, function: "log(x^2 + 1)", label: "Derivadas logarítmicas" },
     { id: 9, function: "e^(x^2 + 2x + 1)", label: "Derivadas exponenciales" }
   ];
